@@ -1,0 +1,8 @@
+from . import views
+from django.urls import path
+
+urlpatterns = [
+    path('instructors/', views.instructor_list),
+    path('courses/', views.course_list),
+    path('lessons/', views.lesson_list),
+]
